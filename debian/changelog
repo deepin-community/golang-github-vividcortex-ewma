@@ -1,5 +1,42 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-vividcortex-ewma (1.1.1-2) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository, Repository-Browse.
+  * Apply multi-arch hints. + golang-github-vividcortex-ewma-dev: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Fri, 05 Feb 2021 00:50:53 +0000
+
+golang-github-vividcortex-ewma (1.1.1-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Dmitry Smirnov ]
+  * New upstream release.
+  * Added "watch" file.
+  * copyright: corrected license name "MIT" --> "Expat".
+  * Priority: optional; Standards-Version: 4.4.1.
+  * Testsuite: autopkgtest-pkg-go
+  * DH & compat to version 12.
+  * Added myself to Uploaders.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 14 Nov 2019 07:33:32 +1100
+
+golang-github-vividcortex-ewma (0.0~git20160822.20.c595cd8-3) unstable; urgency=medium
+
+  * Switch Build-Depends to golang-any
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Tue, 29 Nov 2016 17:55:34 +0100
+
+golang-github-vividcortex-ewma (0.0~git20160822.20.c595cd8-2) unstable; urgency=medium
+
+  * Use uppercase for XS-Go-Import-Path
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Wed, 09 Nov 2016 09:47:03 +0100
+
+golang-github-vividcortex-ewma (0.0~git20160822.20.c595cd8-1) unstable; urgency=medium
+
+  * Initial release (Closes: #841828)
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Tue, 25 Oct 2016 09:08:48 +0200
