@@ -1,15 +1,29 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-vividcortex-ewma
+Section: devel
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Standards-Version: 4.4.1
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Dr. Tobias Quathamer <toddy@debian.org>,
+           Dmitry Smirnov <onlyjob@debian.org>,
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any
+Homepage: https://github.com/vividcortex/ewma
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-vividcortex-ewma
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-vividcortex-ewma.git
+XS-Go-Import-Path: github.com/VividCortex/ewma
+Testsuite: autopkgtest-pkg-go
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-vividcortex-ewma-dev
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: Exponentially Weighted Moving Average algorithms for Go
+ An exponentially weighted moving average is a way to continuously
+ compute a type of average for a series of numbers, as the numbers
+ arrive. After a value in the series is added to the average, its
+ weight in the average decreases exponentially over time. This biases
+ the average towards more recent data. EWMAs are useful for several
+ reasons, chiefly their inexpensive computational and memory cost, as
+ well as the fact that they represent the recent central tendency of
+ the series of values.
